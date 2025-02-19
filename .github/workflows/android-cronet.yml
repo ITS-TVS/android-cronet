@@ -16,4 +16,4 @@ jobs:
           - name: Checkout
             uses: actions/checkout@v4            
           - name: Build Cronet
-            run: ./build/build_android.sh
+            run: bash ./build/build_android.sh
