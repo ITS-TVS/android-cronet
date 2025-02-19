@@ -2,9 +2,9 @@
 
 set -e
 
-echo "Hello Build!"
-
 export CHROMIUM=133.0.6943.98
+
+echo "Build cronet v$CHROMIUM"
 
 mkdir -p output
 rm -rf output/*
