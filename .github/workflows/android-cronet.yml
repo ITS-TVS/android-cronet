@@ -1,0 +1,15 @@
+name: Build cronet for android
+
+on: [push]
+
+jobs:
+    build_library:
+        name: Build cronet library for android
+        runs-on: ubuntu-latest
+        steps:
+          - name: Maximize build space
+            uses: easimon/maximize-build-space@master
+            with:
+              root-reserve-mb: 10000
+              swap-size-mb: 1024
+              remove-dotnet: 'true'        
