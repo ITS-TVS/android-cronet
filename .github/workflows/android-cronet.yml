@@ -12,4 +12,8 @@ jobs:
             with:
               root-reserve-mb: 10000
               swap-size-mb: 1024
-              remove-dotnet: 'true'        
+              remove-dotnet: 'true'
+          - name: Checkout
+            uses: actions/checkout@v4            
+          - name: Build Cronet
+            run: ./build/build_android.sh
