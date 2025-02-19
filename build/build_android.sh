@@ -25,8 +25,10 @@ echo 'solutions = [
 ]
 target_os=["android"]' > .gclient
 
-ls -al
-
-cat .gclient
-
 gclient sync --no-history --nohooks
+
+cd src
+
+./build/install-build-deps.sh
+
+./components/cronet/tools/cr_cronet.py gn
