@@ -25,6 +25,8 @@ echo 'solutions = [
 ]
 target_os=["android"]' > .gclient
 
+ls -al
+
 cat .gclient
 
 gclient sync --no-history --nohooks
