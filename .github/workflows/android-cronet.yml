@@ -14,12 +14,6 @@ jobs:
               swap-size-mb: 1024
               remove-dotnet: 'true'
           - name: Checkout
-            uses: actions/checkout@v4
-          - name: Cache Cronet
-            id: cache-cronet
-            uses: actions/cache@v4
-            with:
-              path: cronet_build
-              key: ${{ runner.os }}-cronet-android            
+            uses: actions/checkout@v4 
           - name: Build Cronet
             run: bash ./build/build_android.sh
