@@ -37,4 +37,4 @@ echo "install dependencies"
 
 echo "execute gn"
 
-./components/cronet/tools/cr_cronet.py gn
+# ./components/cronet/tools/cr_cronet.py gn
