@@ -27,13 +27,13 @@ target_os=["android"]' > .gclient
 
 echo "start gclient"
 
-gclient sync --no-history --nohooks
+# gclient sync --no-history --nohooks
 
 cd src
 
 echo "install dependencies"
 
-./build/install-build-deps.sh
+# ./build/install-build-deps.sh
 
 echo "execute gn"
 
