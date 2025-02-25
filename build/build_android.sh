@@ -14,7 +14,10 @@ cd output
 # export PATH="$(pwd)/depot_tools:$PATH"
 # git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
 
+echo "pwd"
 echo $(pwd)
+
+echo "directory"
 ls -l
 
 echo 'solutions = [
@@ -32,7 +35,7 @@ echo "start gclient"
 
 # gclient sync --no-history --nohooks
 
-cd src
+# cd src
 
 echo "install dependencies"
 
