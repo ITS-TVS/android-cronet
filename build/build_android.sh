@@ -17,15 +17,15 @@ git clone --depth 1 https://chromium.googlesource.com/chromium/tools/depot_tools
 export PATH="$(pwd)/depot_tools:$PATH"
 
 mkdir ~/chromium && cd ~/chromium
-fetch --nohooks --no-history chromium
+# fetch --nohooks --no-history chromium
 
-# git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
+git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
 
 echo "directory"
 ls -l
 
-# gclient config "https://chromium.googlesource.com/chromium/src.git"
-# echo 'target_os = ["android"]' >> .gclient
+gclient config "https://chromium.googlesource.com/chromium/src.git"
+echo 'target_os = ["android"]' >> .gclient
 
 # echo "start gclient"
 # gclient sync --no-history --nohooks
