@@ -17,8 +17,11 @@ git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
 echo "directory"
 ls -l
 
-echo "start gclient"
-gclient sync --no-history --nohooks
+gclient config "https://chromium.googlesource.com/chromium/src.git"
+echo 'target_os = ["android"]' >> .gclient
+
+# echo "start gclient"
+# gclient sync --no-history --nohooks
 
 echo 'solutions = [
       {
