@@ -14,6 +14,8 @@ git clone --depth 1 https://chromium.googlesource.com/chromium/tools/depot_tools
 export PATH="$(pwd)/depot_tools:$PATH"
 git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
 
+ls -l
+
 echo 'solutions = [
       {
         "name": "src",
