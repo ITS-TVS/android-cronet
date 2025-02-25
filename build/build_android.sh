@@ -6,15 +6,19 @@ export CHROMIUM=133.0.6943.98
 
 echo "Build cronet v$CHROMIUM"
 
-mkdir ~/chromium && cd ~/chromium
-fetch --nohooks --no-history chromium
+mkdir -p output
+rm -rf output/*
+cd output
 
-# mkdir -p output
-# rm -rf output/*
-# cd output
+echo "pwd"
+echo $(pwd)
 
 # git clone --depth 1 https://chromium.googlesource.com/chromium/tools/depot_tools.git
 # export PATH="$(pwd)/depot_tools:$PATH"
+
+mkdir ~/chromium && cd ~/chromium
+fetch --nohooks --no-history chromium
+
 # git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
 
 echo "directory"
