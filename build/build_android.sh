@@ -21,13 +21,13 @@ mkdir ~/chromium && cd ~/chromium
 
 git clone -b $CHROMIUM --depth=2 https://chromium.googlesource.com/chromium/src
 
+cd src
+
 echo "directory"
 ls -l
 
 gclient config "https://chromium.googlesource.com/chromium/src.git"
 echo 'target_os = ["android"]' >> .gclient
-
-cd src
 
 echo "start gclient"
 gclient sync --no-history --nohooks
