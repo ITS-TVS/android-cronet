@@ -27,6 +27,8 @@ ls -l
 gclient config "https://chromium.googlesource.com/chromium/src.git"
 echo 'target_os = ["android"]' >> .gclient
 
+cd src
+
 echo "start gclient"
 gclient sync --no-history --nohooks
 
@@ -40,8 +42,6 @@ gclient sync --no-history --nohooks
 #       },
 # ]
 # target_os=["android"]' > .gclient
-
-# cd src
 
 echo "install dependencies"
 
